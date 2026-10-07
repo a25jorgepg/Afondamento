@@ -19,6 +19,10 @@ Una vez accedido al enlace de descaga de la imagen, nos recibiría una web como 
 
 ![Inicio web Ubuntu](imagenes/Web_Ubuntu.png)
 
-En el primer elemento de la tabla, donde pone *Desktop Image*, pinchamos en el enlace de la columna de a derecha, donde pone [64-bit PC (AMD64) desktop image](https://releases.ubuntu.com/noble/ubuntu-24.04.5.1-desktop-amd64.iso), o pinchando en este enlace.
+En el primer elemento de la tabla, donde pone *Desktop Image*, pinchamos en el enlace de la columna de a derecha, donde pone 64-bit PC (AMD64) desktop image, o pinchando en este [enlace](https://releases.ubuntu.com/noble/ubuntu-24.04.5.1-desktop-amd64.iso).
 
-Pinchando en el enlace, comenzaría la descarga
+Pinchando en el enlace, comenzaría la descarga, la cuál será visible pulsando Ctrl + j, para ir al administrado de descargas, viéndose algo así:
+
+![Administrador de descargas](imagenes/Descarga%20Ubuntu.png)
+
+Una vez descargada la imagen ISO, deberemos localizarla en nuestro equipo. **Por defecto se encuentra en la carpeta *Descargas***
