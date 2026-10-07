@@ -1,0 +1,24 @@
+# Instalación de Ubuntu 24.04 en VirtualBox
+---
+## Índice
+
+1. Obtención de la imagen ISO
+2. Creación de la máquina virtual
+3. Configuración de la máquina virtual
+---
+## 1. Obtención de la imagen ISO
+
+Para obtener la imagen ISO de Ubuntu, vamos a nuestro buscador de preferencia y en la barra de búsqueda introducimos *Ubuntu 24.04 ISO* y entramos al enlace que dice *Ubuntu 24.04 (Noble Numbat)*.
+
+![Buscador Ubuntu](imagenes/Ubuntu.png)
+<small>El resultado puede variar, tanto la vesión de Ubuntu 24.04.x, como el nombre que recibe la release</small>
+
+**Es importante asegurarse de que el enlace es original, porque existe el riesgo de descargar una imagen infectada en caso de no obtener la imagen de un enlace lícito.**
+
+Una vez accedido al enlace de descaga de la imagen, nos recibiría una web como esta:
+
+![Inicio web Ubuntu](imagenes/Web_Ubuntu.png)
+
+En el primer elemento de la tabla, donde pone *Desktop Image*, pinchamos en el enlace de la columna de a derecha, donde pone [64-bit PC (AMD64) desktop image](https://releases.ubuntu.com/noble/ubuntu-24.04.5.1-desktop-amd64.iso), o pinchando en este enlace.
+
+Pinchando en el enlace, comenzaría la descarga
