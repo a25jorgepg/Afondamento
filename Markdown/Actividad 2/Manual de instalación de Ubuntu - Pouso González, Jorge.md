@@ -26,3 +26,15 @@ Pinchando en el enlace, comenzaría la descarga, la cuál será visible pulsando
 ![Administrador de descargas](imagenes/Descarga%20Ubuntu.png)
 
 Una vez descargada la imagen ISO, deberemos localizarla en nuestro equipo. **Por defecto se encuentra en la carpeta *Descargas***
+
+---
+
+## 2. Creación de la máquina virtual
+
+Para crear la máquina virtual, accederemos al *VirtualBox*. Donde nos recibirá una página de inicio como esta:
+
+![Inicio Vbox](./Imagenes/Vbox.png)
+
+En el panel superior, podemos ver una serie de opciones, algo similiar a esto 
+
+![botones Vbox](./Imagenes/Captura%20de%20pantalla%20de%202026-10-14%2010-32-54.png)
