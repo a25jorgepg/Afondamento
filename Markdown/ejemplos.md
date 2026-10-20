@@ -11,7 +11,7 @@ __Este texto también está en negrilla__
 **Este texto está en negrilla y *algunas palabras* en
 cursiva**
 ==Texto con marcador fluorescente==
-## Lista
+## Listas
 ### Desordenadas
 * Item 1
 * Item 2
