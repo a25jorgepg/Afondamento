@@ -38,3 +38,19 @@ Para crear la máquina virtual, accederemos al *VirtualBox*. Donde nos recibirá
 En el panel superior, podemos ver una serie de opciones, algo similiar a esto 
 
 ![botones Vbox](./Imagenes/Captura%20de%20pantalla%20de%202026-10-14%2010-32-54.png)
+
+Pinchamos en la estrella azul que pone '*nueva*', y se desplegará un menú de configuración inicial con varios campos. Algo similar a esto:
+
+![nueva](./Imagenes/nueva.png)
+
+Ahora cubriremos todos los campos ajustándose a nuestras necesidades. En cada campo irá esta información
+
+| Campo | Información|
+|:-----:|:-------:|
+|VM Name|Nombre de la máquina virtual|
+|VM Folder|Ruta donde se guardará la carpeta con los datos de la MV|
+|ISO Image|Imagen ISO con el Sistema Operativo que queremos usar en la MV|
+|OS Edition|Versión del sistema operativo|
+|OS|Sistema Operativo|
+|OS Distribution|Para sistemas linux|
+|||
