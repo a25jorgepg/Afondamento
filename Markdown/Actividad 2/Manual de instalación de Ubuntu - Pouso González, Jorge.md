@@ -43,14 +43,95 @@ Pinchamos en la estrella azul que pone '*nueva*', y se desplegará un menú de c
 
 ![nueva](./Imagenes/nueva.png)
 
-Ahora cubriremos todos los campos ajustándose a nuestras necesidades. En cada campo irá esta información
+Ahora cubriremos todos los campos ajustándose a nuestras necesidades. Los diferentes campos del formulario contendrán lo siguiente:
 
-| Campo | Información|
-|:-----:|:-------:|
-|VM Name|Nombre de la máquina virtual|
-|VM Folder|Ruta donde se guardará la carpeta con los datos de la MV|
-|ISO Image|Imagen ISO con el Sistema Operativo que queremos usar en la MV|
-|OS Edition|Versión del sistema operativo|
-|OS|Sistema Operativo|
-|OS Distribution|Para sistemas linux|
-|||
+|      Campo      |                          Información                           |
+| :-------------: | :------------------------------------------------------------: |
+|     VM Name     |                  Nombre de la máquina virtual                  |
+|    VM Folder    |    Ruta donde se guardará la carpeta con los datos de la MV    |
+|    ISO Image    | Imagen ISO con el Sistema Operativo que queremos usar en la MV |
+|   OS Edition    |                 Versión del sistema operativo                  |
+|       OS        |                       Sistema Operativo                        |
+| OS Distribution |      Distribución del SO a utilizar (Para sistemas linux)      |
+|   OS Version    |                 Versión del sistema operativo                  |
+
+> ¡***IMPORTANTE***! Desmarcar la opción *Proceed with Unattented installation*, sin esta opción desmarcada no podremos hacer nada de la seguiente configuración
+
+En el siguiente apartado de *Specify virtual hardware* seleccionaremos los recursos de RAM y núcleos de procesador que queremos que utilice nuestra MV.
+
+![Specs](./Imagenes/specs_VM.png)
+
+|     Nombre     |                           Uso                            |
+| :------------: | :------------------------------------------------------: |
+|  Base Memory   | Cantidad de memoria RAM que utilizará como máximo la MV. |
+| Number of CPUs |       Cantidad de núcleos que puede utilizar la MV       |
+
+- En la selección de cantidad de la memoria RAM se divide en 2 zonas diferenciadas por colores (Verde y Rojo):
+  - La zona roja es donde se vuelve contraproducente asignar tanta RAM a la MV, porque la máqunina anfitriona se queda con poca memoria y esto puede ocasionar cuelgues en la anfitriona, una notoria falta de rendimiento y en determinados casos, pantallazos azules.
+  - La zona verde es donde la máquina anfitriona tiene suficiente memoria para funcionar correctamente. Este nivel es el recomendado para las MV. Pero hai que tener en cuenta cuántas MV se tendrán funcionando simultánemante, porque el uso de RAM de las MV se suma, por lo que si se tiene previsto tener varias MV arrancadas a la vez es mejor que estas tengan una cantidad de RAM menor.
+
+En nuestro caso, la configuración de base de ubuntu solo requiere 2 GB de RAM por defecto para que funcione sin problemas, pero podemos subirlo a 4 GB si queremos asegurar un mejor rendimiento y fluidez. 
+
+Por defecto los núcleos asignados a la máquina son 1 núcleo, pero por la misma razón que antes, podemos subirlo a 2 núcleos para un mejor desempeño.
+
+**Cabe resaltar que esta parte de la configuración puede modificarse posteriormente con la MV apagada.**
+
+
+Marcamos la casilla de *Habilitar EFI*
+
+Por último, tenemos el apartado de *Specify virtual hard disk*. Aquí seleccionaremos el tamaño máximo de la MV.
+
+El formulario sería algo similar al siguiente:
+
+![Tamaño](./Imagenes/Tamaño_VM.png)
+
+En este apartado tenemos que el tamaño que puede tener como máximo la MV es de 25 GB por defecto, aquí podemos ajustarlo a nuestras necesidades.
+
+**¡IMPORTANTE!: No marcar la opción de *Reservar disco completamente***. Si se marca, al crear la máquina virtual, se eliminarán esos 25 GB (O el tamaño configurado) de nuestro disco duro, porque el archivo de la máquina virtual pasa a tener el tamaño indicado en este formulario. De la otra manera, el tamaño de la MV aumenta de manera dinámica en función del contenido y aplicaciones o servicios instalados en la misma.
+---
+
+## 3. Instalación de la máquina virtual
+
+Una vez configurada la máquina virtual, le damos a la opción *terminar* abajo a la derecha y se crearía la máquina virtual lista para arrancar.
+
+En nuestro menú de VirtualBox debería de verse algo así:
+
+![Home_VBOX](./Imagenes/home_VBOX.png)
+
+Hacemos doble click sobre la máquina que acabamos de crear y se empezará la ejecución. Aparecerá un panel lateral con una notificación de la MV se está arrancado
+
+![arrancando_MV](./Imagenes/arrancando_MV.png)
+
+Una vez arrancada la máquina, aparecerá este menú:
+
+![arranque_ubuntu_GRUB](./Imagenes/ubuntu1.png)
+
+Aquí, pulsaremos *enter* para seleccionar la primera opción (*Try or Install Ubuntu*) y se procederá con el arranque inicial del SO
+
+![arranque_ubuntu](./Imagenes/carcando%20ubuntu.png)
+
+Después de un par de minutos de carga, la máquina inicia en el escritorio de ubuntu con el formulario de configuración incial del SO. Aquí haríamos la configuración inicial 
+
+|                 Fase                 |                    Ejemplo                     |
+| :----------------------------------: | :--------------------------------------------: |
+|                Inicio                | ![inicio_ubuntu](./Imagenes/config_ubuntu.png) |
+|            Accesibilidad             |   ![](./Imagenes/accesibilidad%20ubuntu.png)   |
+|       Districución del teclado       |          ![](./Imagenes/teclado.png)           |
+|         Configuración de Red         |            ![](./Imagenes/red.png)             |
+|         Tipo de instalación          |     ![](./Imagenes/tipo%20instalación.png)     |
+|       Aplicaciones a instalar        |      ![](./Imagenes/seleccion%20apps.png)      |
+| Aplicaciones de tereros (Drivers...) |  ![](./Imagenes/software%20de%20terceros.png)  |
+|          Formateo de disco           |      ![](./Imagenes/formato%20disco.png)       |
+|    Control de acceso (Contraseña)    |         ![](./Imagenes/seguridad.png)          |
+|  Nombre y credenciales del usuario   |           ![](./Imagenes/cuenta.png)           |
+|      Selección de zona horaria       |       ![](./Imagenes/zona%20horaria.png)       |
+|       Resumen de configuración       |          ![](./Imagenes/resumen.png)           |
+|     Inicio de instalación del SO     |        ![](./Imagenes/instalación2.png)        |
+
+Después de un tiempo para la instalación del SO, al reiniciarse automáticamente, el resultado sería una pantalla similar a esta:
+
+![incio_sesion](./Imagenes/inicio%20sesion.jpg)
+
+Llegados a este paso, el SO estaría oficialmente instalado y listo para ser utilizado.
+
+**Es recomendable, antes de hacer cualquier modificación, apagar la máquina y crear una snapshot en VirtualBox por si sucede cualquier cosa que ocasione que la máquina deje de funcionar, poder volver a un estado incial. Y luego de tener todas las configuraciones listas, crear una nueva, a parte de la incial en la que el nombre sea algo descriptivo del estado de la máquina, como "*Máquina configurada*" o algo similar.**
