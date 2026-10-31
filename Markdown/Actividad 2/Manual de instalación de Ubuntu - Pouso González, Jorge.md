@@ -2,9 +2,11 @@
 ---
 ## Índice
 
-1. Obtención de la imagen ISO
-2. Creación de la máquina virtual
-3. Configuración de la máquina virtual
+- [Instalación de Ubuntu 24.04 en VirtualBox](#instalación-de-ubuntu-2404-en-virtualbox)
+  - [Índice](#índice)
+  - [1. Obtención de la imagen ISO](#1-obtención-de-la-imagen-iso)
+  - [2. Creación de la máquina virtual](#2-creación-de-la-máquina-virtual)
+  - [3. Instalación de la máquina virtual](#3-instalación-de-la-máquina-virtual)
 ---
 ## 1. Obtención de la imagen ISO
 
@@ -87,7 +89,8 @@ El formulario sería algo similar al siguiente:
 
 En este apartado tenemos que el tamaño que puede tener como máximo la MV es de 25 GB por defecto, aquí podemos ajustarlo a nuestras necesidades.
 
-**¡IMPORTANTE!: No marcar la opción de *Reservar disco completamente***. Si se marca, al crear la máquina virtual, se eliminarán esos 25 GB (O el tamaño configurado) de nuestro disco duro, porque el archivo de la máquina virtual pasa a tener el tamaño indicado en este formulario. De la otra manera, el tamaño de la MV aumenta de manera dinámica en función del contenido y aplicaciones o servicios instalados en la misma.
+**¡IMPORTANTE! No marcar la opción de *Reservar disco completamente***. Si se marca, al crear la máquina virtual, se eliminarán esos 25 GB (O el tamaño configurado) de nuestro disco duro, porque el archivo de la máquina virtual pasa a tener el tamaño indicado en este formulario. De la otra manera, el tamaño de la MV aumenta de manera dinámica en función del contenido y aplicaciones o servicios instalados en la misma.
+
 ---
 
 ## 3. Instalación de la máquina virtual
