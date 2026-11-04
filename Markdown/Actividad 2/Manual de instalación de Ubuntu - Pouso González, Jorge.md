@@ -7,6 +7,10 @@
   - [1. Obtención de la imagen ISO](#1-obtención-de-la-imagen-iso)
   - [2. Creación de la máquina virtual](#2-creación-de-la-máquina-virtual)
   - [3. Instalación de la máquina virtual](#3-instalación-de-la-máquina-virtual)
+- [**Recomendaciones de seguridad**](#recomendaciones-de-seguridad)
+  - [Mantener el equipo actualizado](#mantener-el-equipo-actualizado)
+  - [No entrar en enlaces desconocidos](#no-entrar-en-enlaces-desconocidos)
+  - [Utiliza una VPN en redes de las que desconfíes](#utiliza-una-vpn-en-redes-de-las-que-desconfíes)
 ---
 ## 1. Obtención de la imagen ISO
 
@@ -138,3 +142,17 @@ Después de un tiempo para la instalación del SO, al reiniciarse automáticamen
 Llegados a este paso, el SO estaría oficialmente instalado y listo para ser utilizado.
 
 **Es recomendable, antes de hacer cualquier modificación, apagar la máquina y crear una snapshot en VirtualBox por si sucede cualquier cosa que ocasione que la máquina deje de funcionar, poder volver a un estado incial. Y luego de tener todas las configuraciones listas, crear una nueva, a parte de la incial en la que el nombre sea algo descriptivo del estado de la máquina, como "*Máquina configurada*" o algo similar.**
+
+# **Recomendaciones de seguridad**
+
+## Mantener el equipo actualizado
+
+Es importante mantener el equipo siempre actualizado, porque en las actuailzaciones suelen solucionarse bugs, parchear vulnerabilidades, añadir funcionalidades...
+
+## No entrar en enlaces desconocidos
+
+Si recibes un correo, por ejemplo de tu banco, en el que se piden credenciales de acceso, o información sensible, nunca se debe confiar en esos correos, los bancos no te pedirían información sensible por un canal tan vulneable como las comunicaciones por correo.
+
+## Utiliza una VPN en redes de las que desconfíes
+
+Si tienes que utilizar una red pública o en la que no confíes, es altamente recomendable hacer uso de una VPN para mantenerte seguro dentro de esa red."
