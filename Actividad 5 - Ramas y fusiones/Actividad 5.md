@@ -185,3 +185,8 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/a25jorgepg/Afondamento.git
    94f6f42..5353e7c  main -> main
 ```
+### Comprobación de modificaciones en el documento
+
+![foto 1](./images/Captura_repo_actualizado.png)
+
+![foto 2](./images/Actualización_md.png)
